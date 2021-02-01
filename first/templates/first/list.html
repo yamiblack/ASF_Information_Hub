@@ -1,0 +1,19 @@
+{% extends 'first/base.html' %}
+{% load static %}
+{% block content %} 
+<head>
+    <meta charset="UTF-8">
+    <title>발생지 목록</title>
+</head>
+<body>
+    {% for item in infectedplace %}
+    <div>
+        <h4>{{ item.name }}</h4>
+<p>
+            {{ item.address }}
+        </p>
+    </div>
+    {% endfor %}
+</body>
+</html>
+{% endblock %}
