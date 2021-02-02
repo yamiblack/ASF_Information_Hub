@@ -4,3 +4,5 @@ __pycache__/
 uwsgi.ini
 uwsgi.sock
 django.log
+
+db.sqlite3
