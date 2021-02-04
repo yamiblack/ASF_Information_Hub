@@ -5,42 +5,34 @@
 <head>
   <meta charset="utf-8">
   <title>Google Map</title>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2XrmlvWyGhhIGBtxjvsmZEucF5Eto3l0&callback=initMap&region=kr" type="text/javascript"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2XrmlvWyGhhIGBtxjvsmZEucF5Eto3l0&libraries=visualization&callback=initMap&region=kr" type="text/javascript"></script>
   <script type="text/javascript">
-
 function initMap() {
+  const gradient = [
+    "rgba(0,0,0,0)",
+    "rgb(255, 108, 108)",
+      "rgb(245, 98, 98)",
+      "rgb(235, 88, 88)",
+      "rgb(225, 78, 78)",
+      "rgb(215, 68, 68)",
+      "rgb(205, 58, 58)",
+      "rgb(195, 48, 48)",
+      "rgb(185, 38, 38)",
+      "rgb(175, 28, 28)",
+      "rgb(165, 18, 18)",
+      "rgb(155, 10, 10)",
+      "rgb(150, 0, 0)",
+  ]
+  const locations = [];
   const requestURL = 'http://13.209.245.78/first/ipserializer/?format=json';
   const request = new XMLHttpRequest();
   const map = new google.maps.Map(
     document.getElementById('map'), {
-      zoom: 2,
-      center: { lat: 37.5642135 ,lng: 127.0016985 }
+      zoom: 2.5,
+      minZoom: 2.5,
+      center: { lat: 37.5642135 ,lng: 127.0016985 },
     });
-  function addMarker({address, lat, lng}) {
-    const infoWindow = new google.maps.InfoWindow({
-      content: infoToString(address, lat, lng),
-    })
-    const marker = new google.maps.Marker({
-      position: {lat: Number(lat), lng: Number(lng)} ,
-      map: map,
-    });
-    marker.addListener("click", () => {
-      if(!this.open) {
-        infoWindow.open(map,marker);
-        this.open = true;
-        return;
-      }
-      infoWindow.close();
-      this.open = false;
-    });
-  }
-
-  const infoToString = (address, lat, lng) => {
-    const toString = `<h4>${address}</h4>
-      <div>위도: ${Number(lat).toFixed(5)}</div>
-      <div>경도: ${Number(lng).toFixed(5)}</div>`;
-    return toString;
-  }
 
   request.open('GET', requestURL);
   request.responseType = 'json';
@@ -48,11 +40,21 @@ function initMap() {
   request.onload = function() {
     const asfLocationInformations = request.response;
     for (let i=0; i < asfLocationInformations.length; i++) {
-      addMarker(asfLocationInformations[i]);
+      const location = new google.maps.LatLng(
+        Number(asfLocationInformations[i].lat),
+        Number(asfLocationInformations[i].lng)
+      )
+      locations.push(location);
     }
+    const heatmap = new google.maps.visualization.HeatmapLayer({
+      data: locations,
+      dissipating: true,
+      map: map,
+      gradient: gradient,
+    });
+    heatmap.setMap(map);
   }
 }
-
   </script>
 </head>
 
