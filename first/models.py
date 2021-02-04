@@ -10,5 +10,6 @@ class InfectedPlace(models.Model):
     happened_at = models.DateTimeField(null=True, blank=True)
     reported2oie_at = models.DateTimeField(null=True, blank=True)
     memo = models.TextField(null=True, blank=True)
+    password = models.CharField(max_length=10, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

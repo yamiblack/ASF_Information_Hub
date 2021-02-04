@@ -9,6 +9,11 @@
             <p>메모: {{ item.memo }}</p>
             <p>생성일자: {{ item.created_at }}</p>
             <p>최종수정일자: {{ item.updated_at }}</p>
+            <a href="{% url 'infectedplace-update' id=item.id %}">
+            <button class="btn btn-danger">수정하기</button>
+            &nbsp;&nbsp;
+            <a href="{% url 'infectedplace-delete' id=item.id %}">
+            <button class="btn btn-danger">삭제하기</button>
         </div>
     </div>
 </div>

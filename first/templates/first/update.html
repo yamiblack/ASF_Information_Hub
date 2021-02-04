@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <div class="container">
-    <form action="{% url 'infectedplace-update' %}" method="post">
+    <form action="{% url 'infectedplace-update' id=item.id %}" method="post">
         {% csrf_token %}
         <input type="hidden" name="id" value="{{ form.instance.id }}"/>
         <table>

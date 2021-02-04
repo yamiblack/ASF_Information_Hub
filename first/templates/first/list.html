@@ -11,14 +11,13 @@
         <h4>{{ item.name }}</h4>
 <p>
             {{ item.address }}
-            <a href="{% url 'infectedplace-detail' %}?id={{ item.id }}" class="card-link">
-                <button class="btn">자세히보기</button>
-            </a><br><br>&nbsp;
-            <a href="{% url 'infectedplace-update' %}?id={{ item.id }}" class="card-link">
-                <button class="btn">수정하기</button>
-            </a>&nbsp;&nbsp;
-            <a href="{% url 'infectedplace-delete' %}?id={{ item.id }}">
-                <button class="btn btn-danger">삭제하기</button>
+            <a href="{% url 'infectedplace-detail' id=item.id %}" class="card-link"><button class="btn btn-danger">자세히보기</button></a>
+            <br><br>&nbsp;
+            <a href="{% url 'infectedplace-update' id=item.id %}">
+            <button class="btn btn-danger">수정하기</button>
+            &nbsp;&nbsp;
+            <a href="{% url 'infectedplace-delete' id=item.id %}">
+            <button class="btn btn-danger">삭제하기</button>
             </a>
 
         </p>
