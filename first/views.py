@@ -8,6 +8,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import InfectedPlaceSerializer
 
+from django.core.paginator import Paginator
+
 # Create your views here.
 
 
@@ -19,10 +21,21 @@ def index(request):
 
 
 def list(request):
+    theinfectedplace = InfectedPlace.objects.all()
+    paginator = Paginator(theinfectedplace, 5)
+    page = request.GET.get('page')
+    items = paginator.get_page(page)
     context = {
-        'infectedplace': InfectedPlace.objects.all()
+        'infectedplace': items
+    
     }
     return render(request, 'first/list.html', context)
+
+# def list(request):
+#     context = {
+#         'infectedplace': InfectedPlace.objects.all()
+#     }
+#     return render(request, 'first/list.html', context)
 
 
 def create(request):

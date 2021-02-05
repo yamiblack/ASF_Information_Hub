@@ -8,9 +8,9 @@
 <body>
     {% for item in infectedplace %}
     <div>
-        <h4>{{ item.name }}</h4>
+        <h4>발생국가: {{ item.name }}</h4>
 <p>
-            {{ item.address }}
+            상세지역: {{ item.address }}
             <a href="{% url 'infectedplace-detail' id=item.id %}" class="card-link"><button class="btn btn-danger">자세히보기</button></a>
             <br><br>&nbsp;
             <a href="{% url 'infectedplace-update' id=item.id %}">
@@ -23,6 +23,26 @@
         </p>
     </div>
     {% endfor %}
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <div class="pagination">
+                <span class="step-links text-center" style="width:100%;">
+                    {% if infectedplace.has_previous %}
+                        <a href="?page=1">&laquo;</a>
+                        <a href="?page={{ infectedplace.previous_page_number }}">{{ infectedplace.previous_page_number }}</a>
+                    {% endif %}
+                    <span class="current">
+                        {{ infectedplace.number }} 
+                    </span>
+
+                    {% if infectedplace.has_next %}                       
+                        <a href="?page={{ infectedplace.next_page_number }}">{{ infectedplace.next_page_number }}</a>
+                        <a href="?page={{ infectedplace.paginator.num_pages }}">&raquo;</a>
+                    {% endif %}
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 {% endblock %}
