@@ -16,6 +16,7 @@ DSC Korea Hackathon 2021, 오이당근팀
 * django 3.1.5
 * djangorestframework 3.12.2
 * sqlite3
+* AWS EC2
 
 ## API 서버
 ### 제공하는 key는 다음과 같음
