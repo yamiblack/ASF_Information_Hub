@@ -16,6 +16,8 @@ DSC Korea Hackathon 2021, 오이당근팀
 * django 3.1.5
 * djangorestframework 3.12.2
 * sqlite3
+* uWSGI 2.0.19.1
+* NGINX 1.19
 * AWS EC2
 
 ## API 서버
