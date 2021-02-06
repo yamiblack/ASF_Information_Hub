@@ -5,6 +5,7 @@ DSC Korea Hackathon 2021, 오이당근팀
 ## 주제
 * United Nation sustainable development goal no.15 (Life on lnad)
 * 아프리카 돼지열병의 창궐지 등의 정보를 실시간으로 관찰 가능하고, 동시에 추가/수정이 가능한 서비스
+* 질병 관련 정보들이 전세계엣 산발적으로 존재하며, 시각적으로 한눈에 알기 어려운 문제점을 해결함.
 * 다른 연구자들이 DB의 정보를 이용할 수 있도록 API를 제공함. 
 
 ## 개발환경
@@ -13,9 +14,7 @@ DSC Korea Hackathon 2021, 오이당근팀
 ## 기술 스택
 * python 3.7.4
 * django 3.1.5
-* django-cors-header 3.7.0
 * djangorestframework 3.12.2
-* sqlparse 0.4.1
 * sqlite3
 
 ## API 서버
