@@ -1,6 +1,4 @@
 # DSC Korea Hackathon 2021, 오이당근조 
-##주제 
-
 
 # 개발환경
 * Ubuntu 18.04 LTS
