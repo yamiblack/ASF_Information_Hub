@@ -82,8 +82,8 @@
  - 저장된 데이터의 예시는 위 그림과 같다.
 <br>
 
-## 팀원 및 역할 
+## 팀원별 역할 
 * <a href="https://github.com/jinhgoh">고진형</a> : 백엔드 개발, 데이터베이스, 서버
-* <a href="https://github.com/yeongwooCho">이상훈</a>, : 프론트엔드 개발, Google API
+* <a href="https://github.com/yeongwooCho">이상훈</a> : 프론트엔드 개발, Google API
 * <a href="https://github.com/yamiblack">이주형</a> : 프론트엔드 개발
 * <a href="https://github.com/yeongwooCho">조영우</a> : 데이터 크롤링, 수집
