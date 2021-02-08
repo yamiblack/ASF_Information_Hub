@@ -1,7 +1,12 @@
 # 아프리카 돼지열병(ASF) 정보 허브
  - 해커톤명 : <a href="https://dsc.community.dev/events/details/developer-student-clubs-sookmyung-womens-university-presents-2021-developer-student-clubs-korea-solution-challenge-hackathon/">DSC Korea Hackathon 2021</a>
+ - 해커톤 주최 : Developer Student Clubs 20-21 KOREA Leads
+ - 해커톤 후원 : Google Developers
  - 팀명 : 오이당근(<a href="https://github.com/jinhgoh">고진형</a>, <a href="https://github.com/yeongwooCho">이상훈</a>, <a href="https://github.com/yamiblack">이주형</a>, <a href="https://github.com/yeongwooCho">조영우</a>)
- - 기간 : 2021.01.31 ~ 2021.02.06
+ - 기간 : 2021.01.30 ~ 2021.02.06
+ - 수상 : TOP10 중 한 팀
+ <img src="https://user-images.githubusercontent.com/50551349/107188342-d33b9480-6a2a-11eb-8896-03013b0a4abf.png" width="500">
+ <img src="https://user-images.githubusercontent.com/50551349/107188352-d6cf1b80-6a2a-11eb-9c4a-fc97ae26c865.png"  width="500">
 <br>
 
 ## 주제 및 기대효과
