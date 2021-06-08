@@ -21,7 +21,7 @@
 <br>
 
 ## 발표 영상
-[![Video Label](https://user-images.githubusercontent.com/50551349/107113750-4b2b8280-68a4-11eb-839d-b6782a37916c.png)](https://user-images.githubusercontent.com/50551349/107113305-82e4fb00-68a1-11eb-824b-fafe10d82693.mp4)
+[![Video Label](https://user-images.githubusercontent.com/50551349/121228785-22ee7780-c8c8-11eb-9fba-8353328844ff.png)](https://youtu.be/M-sh0DpJFLA)
 <br>
 
 ## 서비스 소개
