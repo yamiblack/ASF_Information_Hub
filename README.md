@@ -20,22 +20,9 @@
 * 다른 연구자들이 DB의 정보를 이용할 수 있도록 API를 제공
 <br>
 
-## 개발환경
-* Ubuntu 18.04 LTS
-<br>
-
-## 기술 스택
-* python 3.7.4
-* django 3.1.5
-* djangorestframework 3.12.2
-* sqlite3
-* uWSGI 2.0.19.1
-* NGINX 1.19
-* AWS EC2
-<br>
-
 ## 발표 영상
 [![Video Label](https://user-images.githubusercontent.com/50551349/107113750-4b2b8280-68a4-11eb-839d-b6782a37916c.png)](https://user-images.githubusercontent.com/50551349/107113305-82e4fb00-68a1-11eb-824b-fafe10d82693.mp4)
+
 <br>
 
 ## 서비스 소개
@@ -69,8 +56,20 @@
 <img src="https://user-images.githubusercontent.com/50551349/107113332-b0ca3f80-68a1-11eb-8b5f-18d3e3904904.png"> 
 
  - 하단의 'ipserializer(API서버)'를 클릭하면 등록된 데이터를 확인할 수 있는 팝업을 확인할 수 있다.
+<br>
 
+## 개발환경
+* Ubuntu 18.04 LTS
+<br>
 
+## 기술 스택
+* python 3.7.4
+* django 3.1.5
+* djangorestframework 3.12.2
+* sqlite3
+* uWSGI 2.0.19.1
+* NGINX 1.19
+* AWS EC2
 <br>
 
 ## API 서버
