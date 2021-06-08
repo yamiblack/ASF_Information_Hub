@@ -61,7 +61,7 @@
 * Ubuntu 18.04 LTS
 <br>
 
-## 기술 스택
+## 사용 기술 스택
 * python 3.7.4
 * django 3.1.5
 * djangorestframework 3.12.2
